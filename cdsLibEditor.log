@@ -1,0 +1,26 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.8 - CAT37 08/30/2023 13:18 (sjfdcl1037) $
+\o Sub version:		sub-version  s342 
+\o Arguments:		-display localhost:53.0 -mpssession virtuoso11514 -mpshost n01-zeus.olympus.ece.tamu.edu -mpsversion 6.18 -namespace CDBA -cdslib /home/ugrads/m/m.ruiz_21/opt/ECEN454/cds.lib 
+\o Working Directory:	n01-zeus.olympus.ece.tamu.edu:/home/ugrads/m/m.ruiz_21/opt/ECEN454
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		5.9.1
+\a nrResizeWindow(cdsLibEditor list(0 0 500 400))
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(cdsLibEditor list(242 265 500 400))
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "basic"
+\a cdsLibEditor->fileOpenButton->value = t
+\o INFO (CLE-137): Open both files to edit the union of library definition lists used by Cadence tools. 
+\o INFO (CLE-139): Most Cadence tools use only "cds.lib" for the library definition list.\n\nEditing "lib.defs" is optional for use with other programs.                                        
+\a fileOpenGroupDialog->openLibDefsCheckBox->value = nil
+\a fileOpenGroupDialog->openCdsLibText->value = "cds.lib"
+\a fileOpenGroupDialog->openLibDefsText->value = "lib.defs"
+\a fileOpenGroupDialog->openLibDefsText->value = ""
+\a nrSetWindowVisibility(fileOpenGroupDialog "show")
+\a nrResizeWindow(fileOpenGroupDialog list(0 0 490 228))
+\a nrSetCurrentWindow(fileOpenGroupDialog)
+\a nrResizeWindow(fileOpenGroupDialog list(8 31 490 228))
+\a fileOpenGroupDialog->okButton->value = t
+\a nrSetCurrentWindow(cdsLibEditor)
+\a exit(0)
